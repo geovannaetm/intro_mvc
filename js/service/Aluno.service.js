@@ -7,7 +7,7 @@ add (aluno) {
     if(!aluno instanceof AlunoModel) {
         throw new Error('O aluno deve ser uma instância de AlunoModel')
     }
-    this.aluno.push(aluno)
+    this.alunos.push(aluno)
 }
 
 update(aluno) {
