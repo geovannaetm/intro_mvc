@@ -31,7 +31,7 @@ document.querySelector("form").addEventListener("submit",(e) => {
         let allFilled = notasRow.every(nota  => nota.value !== "");
         if(allFilled){
            notas[row.getAttribute("data-materia")] = 
-            notas.Row.map(nota => parseFloat (nota.value) || 0);
+            notasRow.map(nota => parseFloat (nota.value) || 0);
         } else{
             notas[row.getAttribute("data-materia")] = []
         }
